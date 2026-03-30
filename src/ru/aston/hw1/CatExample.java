@@ -12,6 +12,8 @@ public class CatExample {
         System.out.println("\nНеизменяемый кот: " + immutableCat.getName());
         System.out.println("Кот внутри неизменяемого: " + immutableCat.getCat().getName());
 
+        System.out.println("");
+
         MutableCat innerCat = immutableCat.getCat();
         innerCat.setName("Рыжик");
         System.out.println("\nПосле изменения внутреннего кота:");
